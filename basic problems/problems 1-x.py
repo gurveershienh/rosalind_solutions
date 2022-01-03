@@ -31,26 +31,27 @@ def nucleotide_counter(s):
     return count
 
 
-
-
 with open('rosalind_dna.txt', 'r') as file:      
     DNA1 = file.read().rstrip()
 with open('rosalind_dna (1).txt', 'r') as file:
     DNA2 = file.read().rstrip()
     
-print("Problem 1: Counting DNA nucleotides\n\nTesting using downloaded DNA sequences from https://rosalind.info/problems/dna/:\n")
+print("\nProblem 1: Counting DNA nucleotides\n\nTesting using random downloaded DNA sequences from https://rosalind.info/problems/dna/:\n")
 
-print(nucleotide_counter(DNA1))                  ## Testing using downloaded DNA sequences from https://rosalind.info/problems/dna/
+print(nucleotide_counter(DNA1))                  ## Testing using random downloaded DNA sequences from https://rosalind.info/problems/dna/
 print(nucleotide_counter(DNA2))
 
 print("\nTesting edge cases (s == '', s == 'XXXXX', s == '1234'):\n")
 
-print(nucleotide_counter(""))                     ## Testing edge cases (s == '', s == "XXXXX", s == '1234')
+print(nucleotide_counter(""))                     ## Testing edge cases (s == '', s == 'XXXXX', s == '1234')
 print(nucleotide_counter("TTTTT"))
-print(nucleotide_counter("1234"))
+print(nucleotide_counter("1234")+"\n")
 
 
 
 '''
+Problem 2: Transcribing DNA into RNA
+
+
 
 '''

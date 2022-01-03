@@ -1,8 +1,11 @@
 import fileinput
 import os
-os.chdir("problem1")
 
+os.chdir("basic problems")
+os.chdir("data")
 '''
+Problem 1: DNA nucleotide counter
+
 Deoxyribose nucleic acid (DNA) is a polymer comprised of four different nucleic acids, or nucleotides. 
 These 4 nucleotides are adenine (A), guanine (G), thymine (T), and cytosine (C).
 
@@ -28,14 +31,26 @@ def nucleotide_counter(s):
     return count
 
 
+
+
 with open('rosalind_dna.txt', 'r') as file:      
     DNA1 = file.read().rstrip()
 with open('rosalind_dna (1).txt', 'r') as file:
     DNA2 = file.read().rstrip()
+    
+print("Problem 1: Counting DNA nucleotides\n\nTesting using downloaded DNA sequences from https://rosalind.info/problems/dna/:\n")
 
-print(nucleotide_counter(DNA1))                   ## Testing using downloaded DNA sequences from https://rosalind.info/problems/dna/
+print(nucleotide_counter(DNA1))                  ## Testing using downloaded DNA sequences from https://rosalind.info/problems/dna/
 print(nucleotide_counter(DNA2))
+
+print("\nTesting edge cases (s == '', s == 'XXXXX', s == '1234'):\n")
 
 print(nucleotide_counter(""))                     ## Testing edge cases (s == '', s == "XXXXX", s == '1234')
 print(nucleotide_counter("TTTTT"))
 print(nucleotide_counter("1234"))
+
+
+
+'''
+
+'''

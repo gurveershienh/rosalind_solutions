@@ -1,9 +1,9 @@
 from solutions import nucleotide_counter
 import os
-os.chdir("basic problems")
 
 DNA1 = open("data/rosalind_dna.txt", "r").read()
 DNA2 = open("data/rosalind_dna (1).txt", "r").read()
+
 def test_nucleotide_counter():
     ## Testing using random downloaded DNA sequences from https://rosalind.info/problems/dna/
     assert nucleotide_counter(DNA1) == {'A': 221, 'C': 244, 'G': 222, 'T': 218} 

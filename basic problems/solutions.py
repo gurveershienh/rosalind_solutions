@@ -1,8 +1,7 @@
-import fileinput
+
 import os
 
-os.chdir("basic problems")
-os.chdir("data")
+print(os.listdir())
 '''
 Problem 1: DNA nucleotide counter
 

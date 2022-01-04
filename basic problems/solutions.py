@@ -30,11 +30,11 @@ def nucleotide_counter(s):
             count[n] = 1
     return count
 
-
 with open('rosalind_dna.txt', 'r') as file:      
     DNA1 = file.read().rstrip()
 with open('rosalind_dna (1).txt', 'r') as file:
     DNA2 = file.read().rstrip()
+
     
 print("\nProblem 1: Counting DNA nucleotides\n\nTesting using random downloaded DNA sequences from https://rosalind.info/problems/dna/:\n")
 
@@ -52,6 +52,9 @@ print(nucleotide_counter("1234")+"\n")
 '''
 Problem 2: Transcribing DNA into RNA
 
+Ribose nucleic acid (RNA) is the second nucleic acid, where DNA is the first. 
+DNA serves as a blueprint for RNA sequences, where RNA sequences are identical to 
+a given DNA sequence with every thymine (T) nucleotide is replaced with a uracil (U) nucleotide.
 
 
 '''

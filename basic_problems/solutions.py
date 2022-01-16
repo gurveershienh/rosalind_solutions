@@ -61,13 +61,13 @@ def reverse_complement(file):
     rev_comp = ''
     for i in  reversed(s):
         if i == 'A':
-            rev_comp = rev_comp +"T"
+            rev_comp += "T"
         elif i == 'T':
-            rev_comp = rev_comp +"A"
+            rev_comp +="A"
         elif i == 'C':
-            rev_comp = rev_comp +"G"
+            rev_comp += "G"
         else:
-            rev_comp = rev_comp +"C"
+            rev_comp += "C"
     return rev_comp
 
 '''
